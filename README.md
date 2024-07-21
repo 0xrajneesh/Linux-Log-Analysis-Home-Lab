@@ -1,4 +1,4 @@
-# Linux Log Analysis Home Lab
+# Linux Log Analysis Home Lab for beginner
 
 ## Introduction
 

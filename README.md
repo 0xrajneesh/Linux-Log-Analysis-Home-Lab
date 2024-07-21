@@ -137,10 +137,10 @@ Jul 20 10:24:53
 Jul 20 10:24:54
 ...
 ```
-2. Filter Entries by Keyword: Display log entries containing the word "error."
+2. Filter Entries by Keyword: Display log entries containing the word "root."
 
 ```bash
-awk '/error/' /var/log/syslog
+awk '/root/ {print $0}' /var/log/syslog
 ```
 Expected Output:
 
@@ -152,7 +152,10 @@ Jul 20 10:15:56 hostname sshd[12345]: error: PAM: Authentication failure for ill
 3. Count Occurrences: Count the number of "failed" login attempts.
 
 ```bash
-awk '/failed/ {count++} END {print count}' /var/log/auth.log
+root@linux-mumb:~# awk '/root/ {count++} END {print count}' /var/log/auth.log
+
+root@linux-mumb:~# awk '/login/ {count++} END {print count}' /var/log/auth.log
+
 ```
 Expected Output:
 
@@ -172,7 +175,7 @@ user2 3
 5. Save Filtered Logs: Save entries with the keyword "warning" to a new file.
 
 ```bash
-awk '/warning/' /var/log/syslog > warning_logs.txt
+awk '/root/' /var/log/syslog > warning_logs.txt
 ```
 Expected Output:
 

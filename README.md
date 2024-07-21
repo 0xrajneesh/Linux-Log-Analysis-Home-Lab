@@ -266,4 +266,32 @@ Expected Output:
  Logfiles for Host: hostname
 ...
 ```
+### Exercise 5: Using Auditd to Track System Events
+
+**Objective**: Use Auditd to set up and analyze audit rules for tracking specific system events.
+
+**Steps**:
+1. Open a terminal.
+2. Ensure the `auditd` service is running:
+    ```bash
+    sudo service auditd start
+    ```
+3. Add an audit rule to track all `chmod` commands:
+    ```bash
+    sudo auditctl -w /bin/chmod -p x -k chmod_changes
+    ```
+4. Generate some audit logs by running `chmod` commands:
+    ```bash
+    chmod 755 somefile
+    ```
+5. Search the audit logs for `chmod` events:
+    ```bash
+    sudo ausearch -k chmod_changes
+    ```
+
+**Expected Output**: You should be able to set up and analyze audit rules using Auditd, tracking specific system events and generating relevant logs.
+
+---
+
+With these exercises, you will gain practical experience in investigating Linux system logs for security incidents, leveraging various tools and techniques to enhance your analysis capabilities.
 

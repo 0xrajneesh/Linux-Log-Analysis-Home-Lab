@@ -89,7 +89,7 @@ Jul 20 09:24:54 hostname kernel: [107945.787543] audit: type=1400 audit(15952718
 3. Filter by Service: Display logs for the sshd service.
 
 ```bash
-journalctl -u sshd
+journalctl -u ssh
 ```
 Expected Output:
 

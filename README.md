@@ -2,8 +2,9 @@
 
 ## Introduction
 
-In this Home Lab, you will explore various tools and techniques for analyzing Linux logs. This lab is designed to provide hands-on experience with different utilities that are commonly used in the field of log analysis and system administration. By the end of this lab, you will be proficient in using tools such as `journalctl`, `awk`, `tail`, and `logwatch` to extract, analyze, and visualize log data effectively.
 ![Copy of Announcement](https://github.com/user-attachments/assets/de8098ec-1b87-459a-869e-4464643c0e95)
+In this Home Lab, you will explore various tools and techniques for analyzing Linux logs. This lab is designed to provide hands-on experience with different utilities that are commonly used in the field of log analysis and system administration. By the end of this lab, you will be proficient in using tools such as `journalctl`, `awk`, `tail`, and `logwatch` to extract, analyze, and visualize log data effectively.
+
 
 
 ## Pre-requisites
